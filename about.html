@@ -1,0 +1,111 @@
+<!--- about --->
+<!DOCTYPE.html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <link rel="stylesheet" type="text/css" href="CSS/animate.css"> 
+        
+        <!--- favicon --->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon1.ico">    
+        
+        <!--- Amiko font --->
+        <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+        
+        <!--- Karla font --->
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">    
+        
+        <!--- Open Sans Condensed Text font --->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        
+        <!--- Ubuntu Condensed One font --->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+        
+        <!--- boostrap --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+        
+        <!--- Jquery cdn --->
+        <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+        
+        <!--- Scroll function javascript --->
+        <script>
+            $(function() {
+            $('.scroll-down').click (function() {
+            $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+            return false;
+                });
+            });    
+
+        </script>  
+        
+         
+    </head>
+    
+    <body>
+        <div class = "aboutmenu">
+            <a href = "about.html" class="button animated fadeIn"> ABOUT </a>
+        </div>
+        
+        <div class = "debmenu">
+            <a href = "index.html"><h1 class="button animated fadeIn">DEBORAH CHANG</h1></a>
+        </div>
+        
+        <div class = "projmenu">
+            <a href = "projects.html" class="button animated fadeIn"> PROJECTS</a>  
+        </div>  
+
+        <div class="aboutblock"></div>
+        
+        <div class="button animated fadeIn"><img class="mepic" src ="images/mepic.png"></div>
+        <div class="button animated fadeIn"><h1 class = "about1">GET TO</h1></div>
+        <div class="button animated fadeIn"><h1 class = "about2">KNOW ME</h1></div>
+        
+        <div class="button animated fadeIn">
+            <div class = "aboutme">
+                <p>I am currently a senior at UC Davis majoring in Computer Science and minoring in Managerial Economics, expecting to graduate June 2018. I hope to use my skills to make others happy and bring good to the world. </p>
+            </div>
+        </div>
+        
+        <a href="#" class="scroll-down" address="true"></a>        
+        <section class="ok">
+            <p></p>
+        </section>  
+        
+        <h1 class = "skills">MY SKILLS</h1>   
+        <div class="skillsdiv">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                    <img class="skillsicon" src="images/team.png">
+                    <h2 class="skillstitle">Organization</h2>
+                    <p class="skillsdes">As a past campus brand ambassador, I have organized activities and plans to increase awareness of my brand's ios application. I organized the dates and times of where to target and advertise our brand, and I attended every meeting for all ambassadors via video chat.</p>
+
+                </div>
+                <div class="col">
+                    <img class="skillsicon" src="images/programing.png">
+                    <h2 class="skillstitle">Programming</h2>
+                    <p class="skillsdes"> I have taken courses at UC Davis in C++, Java, Linux, and Prolog. </p>
+                </div>
+                <div class="col">
+                    <img class="skillsicon" src="images/webdev.png">
+                    <h2 class="skillstitle">Web Development</h2>
+                    <p class="skillsdes"> I taught myself HTML/CSS and Javascript through online resources and outside workshops.</p>
+                </div>
+                <div class="col">
+                    <img class="skillsicon" src="images/groupleader.png">
+                    <h2 class="skillstitle">Leadership</h2>
+                    <p class="skillsdes">I have lead small group for youth kids for 3 years. Every week I build study lessons and guidelines to teach to the kids. Every year, I organize and lead the retreat activities for the kids to participate in.</p>
+                </div>
+              </div>
+            </div>             
+        </div>  
+        
+        <h3 class="interests">THINGS I LIKE TO DO</h3>
+        <p class="interestsdes">playing tennis, exploring new cities, trying different instant ramen brands</p>
+    
+    </body>
+
+</html>

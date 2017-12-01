@@ -1,0 +1,305 @@
+html,body {
+    padding: 0;
+    margin: 0;
+}
+
+.bgblock{
+    background-color: rgb(246,229,219);
+    width: 700px;
+    height: 635px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    top: 18%;
+    left: 55%;
+}
+
+.welcome1{
+    position: absolute;
+    top: 275;
+    left: 360;
+    font-size: 150px;
+    font-family: 'Karla', sans-serif;
+}
+
+.welcome2{
+    position: absolute;
+    top: 320;
+    left: 610;
+    font-size: 150px;
+    font-family: 'Karla', sans-serif;    
+}
+
+.aboutmenu a{
+    font-family: 'Amiko', sans-serif;    
+    float: left;
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 100;
+}
+
+.debmenu h1 {
+    font-family: 'Amiko', sans-serif;    
+    font-size: 40px;
+    position: absolute;
+    top: 30;
+    left: 500;
+    z-index: 100;
+
+}
+
+.projmenu a{
+    font-family: 'Amiko', sans-serif;
+    float: right;
+    text-align: center;
+    top: 40;
+    right: 250;
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 100;
+}
+
+.debmenu a:hover, .debmenu a:link, .debmenu a:visited{
+    color: black;
+    z-index: 1000;
+}
+
+.aboutmenu a:hover, .aboutmenu a:link, .aboutmenu a:visited{
+    color: black;
+}
+
+.projmenu a:hover, .projmenu a:link, .projmenu a:visited{
+    color: black;
+}
+
+.insta{
+    position: absolute;
+    top: 748;
+    left: 1110;
+    font-size: 25px;
+}
+#instacolor{
+    color: black;
+}
+.insta i:hover{
+    color: black;
+}
+
+.linkedin{
+    position: absolute;
+    top: 748;
+    left: 1145;
+    font-size: 25px;
+}
+#linkedincolor{
+    color: black;
+}
+.linkedin i:hover{
+    color: black;
+}
+
+.etsy{
+    position: absolute;
+    top: 750;
+    left: 1177;
+    font-size: 20px;
+}
+#etsycolor{
+    color: black;
+}
+.etsy i:hover{
+    color: black;
+}
+
+/* ----------- about.html ----------- */
+
+.aboutblock{
+    background-color: rgb(255, 227, 181);
+    top: 100;
+    width: 550px;
+    height: 700px;
+    margin-left: -100px;    
+    position: absolute;
+
+}
+
+.mepic {
+    width: auto;
+    max-width: 350px;
+    height: auto;
+    max-height: 600px;
+    position: absolute;
+    top: 250;
+    left: 800;   
+}
+
+.about1{
+    
+    position: absolute;
+    top: 210;
+    left: 170;
+    font-size: 80px;
+    font-family: 'Karla', sans-serif;    
+    
+}
+
+.about2{
+    position: absolute;
+    top: 290;
+    left: 330;
+    font-size: 80px;
+    font-family: 'Karla', sans-serif;
+}
+
+.aboutme{
+    position: absolute;
+    top: 475;
+    left: 110;
+    width: 330px;
+    
+}
+
+.aboutme p{
+    font-family: 'Karla', sans-serif;
+    font-size: 17px;
+    text-align: right;
+
+}
+
+.skills{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;  
+    position: absolute;
+    top: 850;
+    left: 610;
+    color: black;
+}
+
+.skillsdiv{
+    position: relative;
+    text-align: center;
+    top: 970;
+    left: 15;
+    z-index: 300;
+}
+
+.skillsicon{
+    height: auto;
+    width: auto;
+    max-height: 120px;
+    max-width: 120px;
+}
+
+h2{
+    text-align: center;
+}
+
+.skillstitle{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.skillsdes{
+    font-size: 15px;
+    font-family: 'Amiko', sans-serif;    
+}
+
+.interests{
+    position: absolute;
+    top: 1400;
+    left: 550;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 45px;
+}
+
+.interestsdes{
+    position: absolute;
+    top: 1470;
+    left: 550;  
+    font-family: 'Amiko', sans-serif;       
+    font-size: 15px;
+}
+
+.temp{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+/* ------ about page scroll feature ------ */
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: table;
+    position: absolute;
+    margin-left: -10px;
+    top: 800;
+  
+}
+section.ok{
+  background-color: rgb(255, 227, 181);
+  margin: auto;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid black;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
