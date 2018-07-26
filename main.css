@@ -1,0 +1,491 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section.mainblock {
+    background-color: #6FC8C4;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 800px;
+}
+
+#curveone {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curveone path {
+    fill: #FFC2A2;
+}
+
+section.aboutblock {
+    background-color: #FFC2A2;
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+#curvetwo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curvetwo path {
+    fill: #9CCDEA;
+}
+
+section.projectsblock {
+    background-color: #9CCDEA;
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+#curvethree {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curvethree path {
+    fill: #FFE199;
+}
+
+section.contactblock {
+    background-color: #FFE199;
+    width: 100%;
+    height: 450px;
+    
+}
+
+ul {
+    margin: 0;
+    position: fixed;
+    top: 10%;
+    left: 55%;
+    z-index: 2;
+}
+
+.nav li{
+    list-style-type: none;
+    display: inline;
+}  
+
+.nav li a {
+    font-family: 'Amiko', sans-serif;
+    color: black;
+    text-decoration: none;
+    display: inline;
+    padding: 10px 20px 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.nav li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #000;
+    height: 4px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}   
+
+.underline:hover:after, 
+.underline:focus:after,
+.underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+.titlename {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin: 0;
+    top: 30%;
+    left: 17%;
+    font-size: 38px;
+    width: 350px;
+    line-height: 1.3;
+}
+
+.titlebio {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    position: relative;
+    top: 30%;
+    left: 17%;
+    font-size: 35px; 
+    width: 400px;
+    line-height: 1.1;
+}
+
+.sidecontact {
+    position: fixed;
+    bottom: 300px;
+    left: -75px;
+    z-index: 2;
+    transform: rotate(90deg);
+}
+
+.sidecontact a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Mono', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.sidecontact a:hover {
+    color: black;
+    background-color: white;
+}
+
+.v1 {
+    border-left: 1px solid black;
+    height: 150px;
+    z-index: 2;
+    position: fixed;
+    left: 45px;
+    bottom: 0;
+}
+
+.titleabout {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    position: absolute;
+    left: 17%;
+}
+
+.picofme {
+    width: 300px;
+    position: absolute;
+    left: 60%;
+}
+
+.bioabout {
+    font-family: 'Roboto', sans-serif;
+    width: 450px;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+}
+
+.titleprojects {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    position: absolute;
+    left: 17%;
+}
+
+.projectone {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #FF918E;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.fa-user:hover {
+    color: #eee;
+}
+
+.icon:hover {
+    color: #4B4545;
+}
+
+.bookclubtitle {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.dentisttitle {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.bookclubimg {
+    width: 400px;
+}
+
+.projecttwo {
+    position: absolute;
+    top: 20%;
+    left: 56%
+}
+
+.containertwo {
+    position: relative;
+    width: 100%;
+}
+
+.containertwo:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+}
+
+.dentistimg {
+    width: 300px;
+}
+
+.contactintro {
+    position: relative;
+    top: 90px;
+}
+
+.titlecontact {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.keepintouch {                                         
+    font-weight: bold;
+    color: #4B4545;
+    font-family: 'Muli', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+i.far {
+    font-size: 30px;
+    position: relative;
+    left: 40%;
+    top: 158px;
+}
+
+.email {
+    position: relative;
+    top: 125px;
+    left: 43%;
+    font-size: 20px;
+    margin: 0;
+    width: 300px;
+}
+
+i.contact {
+    font-size: 30px;
+    position: relative;
+    left: 43%;
+    top: 150px;
+    padding: 15px;
+    color: #4B4545;
+}
+
+i.contact:hover {
+    color: white;
+}
+/* ------ media screen ------ */
+
+@media only screen and (max-width: 600px) {
+    .titlename {
+        font-size: 25px;
+        top: 35%;
+        width: 250px;
+    }
+    
+    .titlebio {
+        font-size: 25px;
+        top: 35%;
+        width: 300px;
+    }
+    
+    .sidecontact a {
+        font-size: 13px;
+    }
+    
+    .v1 {
+        left: 33px;
+    }
+    
+    .titleabout {
+        font-size: 35px;
+        left: 33%;
+    }
+    
+    .picofme {
+        left: 30%;
+    }
+    
+    .bioabout {
+        font-size: 14px;
+        width: 350px;
+        top: 50%;
+        left: 30%;
+    } 
+    
+    .titleprojects {
+        font-size: 35px;
+        width: 250px;
+        left: 30%
+    }
+    
+    .projectone {
+        top: 10%;
+        left: 20%;
+    }
+    
+    .projecttwo {
+        top: 40%;
+        left: 22%
+    }
+    
+    .bookclubtitle {
+        font-size: 15px;
+    }
+    
+    .dentisttitle {
+        font-size: 15px;
+    }
+    
+    .bookclubimg {
+        width: 280px;
+    }
+    
+    .dentistimg {
+        width: 280px;
+    }   
+    
+    .contactintro {
+        left:  5%;
+        width: 380px;
+    }
+
+    .titlecontact {
+        font-size: 45px;
+    }
+
+    i.far {
+        font-size: 30px;
+        position: relative;
+        left: 25%;
+        top: 160px;
+    }
+
+    .email {
+        position: relative;
+        top: 130px;
+        left: 35%;
+        font-size: 20px;
+        width: 220px;
+    }    
+    
+    i.contact{
+        left: 30%;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .picofme {
+        top: 10%;
+        width: 200px;
+    }
+    
+    .bioabout {
+        width: 250px;
+    }
+    
+    .bookclubtitle {
+        font-size: 20px;
+    }
+    
+    .dentisttitle {
+        font-size: 20px;
+    }
+    
+    .bookclubimg {
+        width: 280px;
+    }
+    
+    .dentistimg {
+        width: 280px;
+    }
+}
